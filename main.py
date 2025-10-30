@@ -1,22 +1,28 @@
+#variable representing your maximum number
 
-today = "Monday"
-# schoolday = today in ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"]
-schoolday = (
-    (today == "Monday") or
-    (today == "Tuesday") or
-    (today == "Wednesday") or
-    (today == "Thursday") or
-    (today == "Friday")
-)
+#make a for loop that goes from 1 to your max number (including your max number)
 
-if schoolday:
-    if today == "Friday":
-        print("We have Kab Shab today.")
-    elif today == "Monday":
-        print("We have Assembly today.")
-    elif today == "Wednesday":
-        print("We have Heart Work today.")
+#print each number UNLESS the number is a multiple of 3 or 5
+
+#if the number is a multiple of 3 and not 5, print "fizz" instead of the number
+
+#f the number is a multiple of 5 and not 3, print "buzz" instead of the number
+
+#if the number is a multiple of both 3 and 5, print "fizzbuzz" instead of the number
+
+
+
+max_number = 15
+
+#start
+
+for x in range(1, max_number + 1):
+    if x % 3 == 0 and x % 5 == 0:
+        print("fizzbuzz")
+    elif x % 3 == 0:
+        print("fizz")
+    elif x % 5 == 0:
+        print("buzz")
     else:
-        print("We have a short break today.")
-else:
-    print("Weekend!!")
+        print(x)
+
